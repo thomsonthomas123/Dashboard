@@ -27,7 +27,7 @@
   --box-shadow: 0 2rem 3rem var(--color-light);
 }
 
-/* universal selector */
+
 * {
   margin: 0;
   padding: 0;
@@ -139,7 +139,7 @@ aside .top {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* a property of flex, align the items with equl space between */
+ 
   margin-top: 1.4rem;
 }
 
@@ -161,7 +161,7 @@ aside .close {
 aside .sidebar {
   display: flex;
   flex-direction: column;
-  /* to list the items hoeizontally */
+  
   height: 86vh;
   position: relative;
   top: 3rem;
@@ -207,12 +207,12 @@ aside .sidebar a.active::before {
 }
 
 aside .sidebar a.active span {
-  /* color: var(--color-primary); */
+ 
   margin-left: calc(1rem - 4px);
-  /* to move the active menu to the right with respect to the left margin of other nav options */
+
 }
 
-/* hover animation */
+
 aside .sidebar a:hover {
   color: var(--color-primary);
 }
@@ -229,13 +229,13 @@ aside .sidebar .message-count {
   border-radius: var(--border-radius-1);
 }
 
-/* MAIN Section */
+
 main {
   margin-top: 1.4rem;
 }
 
 main .date {
-  /* inline-block allows to set a height & width on the element */
+
   display: inline-block;
   margin-top: 1rem;
   padding: 0.5rem 1.6rem;
@@ -250,7 +250,7 @@ main .date input[type="date"] {
 
 main .insights {
   display: grid;
-  /* to arrange the 3 itmes in the single grid block with 1 fraction unit, i.e. for 1 part of the available space */
+  
   grid-template-columns: repeat(3, 1fr);
   gap: 1.6rem;
 }
@@ -260,9 +260,9 @@ main .insights > div {
   padding: var(---card-padding);
   border-radius: var(--card-border-radius);
   margin-top: 1rem;
-  /* for the transition to be smooth, which is defined in the block below (:hover) */
+  
   transition: all 300ms ease;
-  /* creating the shadow */
+  
   border-radius: 41px;
   background: #e0e0e0;
   box-shadow: 7px 7px 27px #9b9b9b, -7px -7px 27px #ffffff;
@@ -288,7 +288,7 @@ main .insights .income span {
   background: var(--color-success);
 }
 
-/* contains everything in the card */
+
 main .insights .middle {
   display: flex;
   justify-content: space-between;
@@ -313,7 +313,7 @@ main .insights svg {
 }
 
 main .insights svg circle {
-  /* to empty circle */
+  
   fill: none;
   stroke: var(--color-primary);
   stroke-width: 14;
@@ -335,7 +335,7 @@ main .insights .income svg circle {
   stroke-dasharray: 110;
   stroke-dashoffset: 35;
 }
-/* positioning the percentage inside the circle */
+
 main .insights .progress .number {
   position: absolute; /*as the progress is positioned relative above*/
   top: 0;
@@ -352,7 +352,7 @@ main .insights small {
   display: block;
 }
 
-/* RECENT ORDERS */
+
 main .recent-order {
   margin-top: 2rem;
 }
@@ -394,7 +394,7 @@ main .recent-order a {
   color: var(--color-primary);
 }
 
-/* RECENT UPDATES */
+
 .right {
   margin-top: 1.4rem;
 }
